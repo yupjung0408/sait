@@ -71,12 +71,13 @@
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
 
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
+                    <!-- button.btn-prev.btn -->
+                    <button class="btn-prev btn">
+                        <img src="./images/btn-prev.png" alt="이전" />
+                    </button>
+                    <button class="btn-next btn">
+                        <img src="./images/btn-next.png" alt="다음" />
+                    </button>
                 </div>
             </section>
             <hr />
@@ -220,11 +221,6 @@
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
-                },
-
-                // And if we need scrollbar
-                scrollbar: {
-                    el: '.swiper-scrollbar',
                 },
             });
         </script>
