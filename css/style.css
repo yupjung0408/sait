@@ -1,0 +1,225 @@
+@charset 'utf-8';
+
+#header {
+    background: #fff;
+}
+
+#header nav {
+    display: flex;
+    height: 104px;
+    justify-content: space-between; /* jcsb */
+    align-items: center; /* aic */
+}
+
+.gnb {
+    display: flex;
+}
+
+.gnb li a {
+    display: block;
+    padding: 12px 20px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--title-color);
+}
+
+.btn-search {
+    width: 54px;
+    height: 54px;
+    background: #fff;
+    border: 1px solid var(--line-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual {
+    height: 595px;
+    background: skyblue;
+}
+
+.visual-slider {
+    height: 100%;
+}
+
+.visual-slider .swiper-slide figure {
+    width: 100%;
+    height: 100%;
+}
+.visual-slider .swiper-slide figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 0; /* obp */
+}
+
+.research {
+    padding: 80px 0 66px;
+    background: var(--bg-color);
+}
+
+.research-list {
+    /* background: #5f5; */
+    margin-top: 61px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.research-list li {
+    /* border: 1px solid #000; */
+    width: 380px;
+    height: 200px;
+    background: #fff;
+    padding: 36px 38px;
+}
+
+.research-list li a {
+    display: flex;
+    gap: 29px;
+}
+
+.research-list li a::before {
+    content: '';
+    display: block;
+    width: 71px;
+    height: 60px;
+    background: no-repeat 50%;
+
+    flex-shrink: 0; /* fxsh0: 줄어들지마 */
+}
+
+.research-list li:nth-child(1) a::before {
+    background-image: url(../images/research-icon01.png);
+}
+.research-list li:nth-child(2) a::before {
+    background-image: url(../images/research-icon02.png);
+}
+.research-list li:nth-child(3) a::before {
+    background-image: url(../images/research-icon03.png);
+}
+.research-list li:nth-child(4) a::before {
+    background-image: url(../images/research-icon04.png);
+}
+.research-list li:nth-child(5) a::before {
+    background-image: url(../images/research-icon05.png);
+}
+.research-list li:nth-child(6) a::before {
+    background-image: url(../images/research-icon06.png);
+}
+.research-list li:nth-child(7) a::before {
+    background-image: url(../images/research-icon07.png);
+}
+.research-list li:nth-child(8) a::before {
+    background-image: url(../images/research-icon08.png);
+}
+.research-list li:nth-child(9) a::before {
+    background-image: url(../images/research-icon09.png);
+}
+
+.research-list li dl dt {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--title-color);
+}
+.research-list li dl dd {
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.join {
+    min-height: 690px;
+    padding: 80px 0;
+    background: url(../images/process-bg.jpg) no-repeat 50% / cover;
+    background-attachment: fixed; /* bga: 배경 이미지 고정 */
+}
+
+.join * {
+    color: #fff;
+}
+
+.join-con {
+    /* background: tomato; */
+    margin-top: 119px;
+    width: 650px;
+}
+
+.join-con h3 {
+    font-weight: 700;
+    font-size: 44px;
+}
+.join-con p {
+    font-size: 20px;
+    margin-top: 31px;
+}
+.join-con a {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 34px;
+    display: flex;
+    gap: 5px;
+}
+
+.join-con a::after {
+    content: '';
+    display: block;
+    width: 27px;
+    height: 27px;
+    background: url(../images/ico-more.png) no-repeat 50%;
+}
+
+#footer {
+    background: #1f1f1f;
+    padding: 77px 0;
+}
+
+#footer * {
+    color: #7e7e7e;
+}
+
+.foot-link ul {
+    display: flex;
+    margin-left: -16px; /* ml-16: a태그의 왼쪽 padding값만큼 재조정 */
+}
+.foot-link ul li {
+    /* border: 1px solid #f00; */
+    position: relative;
+}
+
+.foot-link ul li::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 10px;
+    background: var(--white30p);
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%); /* trfty */
+}
+
+.foot-link ul li:last-child::after {
+    display: none;
+}
+
+.foot-link ul li a {
+    display: block;
+    padding: 5px 16px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.foot-con {
+    border-top: 1px solid var(--white30p); /* bdt */
+    margin-top: 31px;
+    padding-top: 31px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright p + p {
+    font-weight: 700;
+    margin-top: 6px;
+}
