@@ -120,6 +120,66 @@
     height: 200px;
     background: #fff;
     padding: 36px 38px;
+
+    position: relative;
+}
+
+.research-list li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background: red;
+    transition: 0.4s;
+}
+
+.research-list li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 4px;
+    background: orange;
+    transition: 0.4s;
+}
+
+.research-list li dl::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0%;
+    background: yellow;
+    transition: 0.4s;
+}
+
+.research-list li dl::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4px;
+    height: 0%;
+    background: green;
+    transition: 0.4s;
+}
+
+.research-list li:hover::before,
+.research-list li:hover::after {
+    width: 100%;
+}
+
+.research-list li:hover dl::before,
+.research-list li:hover dl::after {
+    height: 100%;
 }
 
 .research-list li a {
